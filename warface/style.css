@@ -1,0 +1,243 @@
+html , body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+p{
+	margin-top: 0;
+}
+h1{
+	color: #fff;
+}
+.bg{
+
+	background: url(bg1.jpg) center top no-repeat;
+	min-width: 1016px;
+	min-height: 1200px;
+}
+
+header{
+	color: #fff ;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 100px;
+	margin-left: 460px;
+
+	display: grid ;
+	grid-template-columns:1fr 1fr 1fr ;
+	grid-column-gap:180px;
+	grid-template-areas:
+						"logo btn1"
+						"logo btn2";
+
+
+}
+
+.LOGO {
+	height: 190px;
+	width: 270px;
+	background: url(logo.png) center no-repeat;
+}
+header div:nth-child(1){
+	grid-area:logo;
+	cursor: pointer;
+}
+header div:nth-child(2){
+	cursor: pointer;
+	text-align: center;
+	 font-size: 27px;
+    line-height: 50px;
+	width: 268px;
+    height: 55px;
+	grid-area:btn1;
+	background: url(btn_type1.jpg) no-repeat;
+}
+header div:nth-child(3){
+	cursor: pointer;
+	text-align: center;
+	 font-size: 27px;
+    line-height: 50px;
+	width: 268px;
+    height: 55px;
+	grid-area:btn2;
+	background: url(btn_type1.jpg) no-repeat;
+}
+
+/*совсем другая хуйня*/
+.brcon{
+	margin: 0 170px 0 160px ;
+	box-shadow: 0 3px 8px 2px rgba(33,29,30,.8);
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+	padding:1px;
+	background: url(container_bg.jpg);
+
+}
+.container {
+		    box-shadow: 0 3px 8px 2px rgba(33,29,30,.8);
+    border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+	padding:1px;
+	font-family: 'Open Sans', sans-serif;
+	background: url(navigation_bg.jpg);
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+	display: grid ;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 252px;
+	grid-auto-rows:45px;
+}
+
+	.container div {
+		 font-size: 17px;
+		    padding-top: 10px;
+			white-space: nowrap;
+    		text-align: center;
+			cursor: pointer;
+			text-align: center;
+			border-right: 1px solid #000 ;
+	}
+
+	.container div:hover {
+		color: #ff4e00;
+	}
+
+/*	DVE COLONKI*/
+
+.COLONKI{
+	display: grid;
+	grid-template-columns: 6fr 2fr ;
+
+	
+}
+
+.COLONKI div:nth-child(1){
+	
+	height:377px ;
+	content: ' ';
+background: url(0958b4b4056a703bd996d77426d29cd7.png)  no-repeat ;
+}
+.COLONKI div:nth-child(2){
+	height:377px ;
+	content: ' ';
+background: url(wf_top_banners_right.jpg)  no-repeat;
+}
+/*КОНТЕНТ */
+.MENY{
+	color: #666;
+	justify-items:start;
+	grid-column-gap:10px;
+	height: 80px;
+	display: grid;
+	grid-template-columns:6fr 1fr 1fr 1fr 1fr 1fr 1fr 4fr ;
+}
+.MENY h1{
+ background: url(heading_bg.png);
+ margin-left: 25px;
+height:40px;
+width: 200px;
+ font-weight: lighter; 
+
+}
+.MENY div:nth-child(1){
+padding-top: 0;
+
+}
+
+.MENY div{
+
+ padding-top: 30px
+}
+.bgworfest{
+	margin-left: -10px;
+	margin-top: 5px;
+	width: 240px;
+    height: 128px;
+	background: url(aside_warfest.png) no-repeat;
+}
+.vk{
+	
+	text-align: center;
+	border:1px solid #252525;
+	background: #141414;
+	margin-left: -10px;
+	margin-top: 5px;
+	width: 240px;
+    height: 250px;
+}
+hr{
+	border:  1px solid #252525;
+}
+.vk a{
+	width: 150px;
+	height:150px;
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+button{
+	margin-top: 10px;
+	background: #5e81a8;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 2px;
+}
+
+.vk img{
+	border-radius: 100%;
+}
+
+.box1{
+	background-position: 0 -92px;
+	margin-left: 17px;
+	grid-column-gap:20px;
+	display: grid;
+	grid-template-columns:1fr 4fr ;
+	color: #999;
+	padding-bottom: 18px;
+	margin-bottom: 18px;
+	width: 755px;
+	border-bottom: 1px solid #333 ;
+}
+
+
+
+/*оборежно кантузия*/
+.socials {
+	height: 138px;
+	padding-bottom: 0;
+    background: #141414 url(https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/page/socials_join_bg.png) top center no-repeat;
+    height: 100px;
+    padding: 28px 0 40px;
+    text-align: center;
+    border-top: 1px solid #252525;
+    border-bottom: 1px solid #252525;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.socials .btn_reg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 -134px;
+}
+
+.btn_type1 {
+    background-image: url(btn_type1.jpg) no-repeat;
+}
+
+.btn {
+    background-position: top center;
+    display: block;
+    width: 268px;
+    height: 55px;
+    font-size: 32px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
